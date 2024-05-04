@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react/types-6-0';
 import { action } from '@storybook/addon-actions';
-import Button, { ButtonProps } from '../components/shared/Button'; // Adjust the import path as needed
+import Button, { ButtonProps } from '../components/Button'; // Adjust the import path as needed
 
 // Define the default export to configure metadata for the story
 const meta: Meta = {
