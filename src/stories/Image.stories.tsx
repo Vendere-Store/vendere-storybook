@@ -15,18 +15,24 @@ const Template: Story<ImageData> = (args: ImageData) => <Image {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
+    aspectW: "2",
+    aspectH: "2",
     imageSrc: 'https://via.placeholder.com/150',
     imageAlt: 'Placeholder Image'
 } as ImageData;  // Explicitly type the args for better type checking
 
 export const Large = Template.bind({});
 Large.args = {
+    aspectW: "1",
+    aspectH: "1",
     imageSrc: 'https://via.placeholder.com/500x300',
     imageAlt: 'Large Placeholder Image'
 } as ImageData;  // Same as above
 
 export const FixedSizeImage = Template.bind({});
 FixedSizeImage.args = {
+    aspectW: "2",
+    aspectH: "2",
     imageSrc: 'https://via.placeholder.com/500x300',
     imageAlt: 'Fixed Size Image',
     style: { width: '200px', height: '200px', display: 'flex' } // Set dimensions and use flex to manage image

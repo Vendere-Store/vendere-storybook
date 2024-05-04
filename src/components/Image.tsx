@@ -4,12 +4,14 @@ export interface ImageData {
     imageSrc: string;
     imageAlt: string;
     style?: React.CSSProperties;
+    aspectH: string
+    aspectW: string
 }
 
-const Image: React.FC<ImageData> = ({ imageSrc, imageAlt, style }) => {
+export const Image: React.FC<ImageData> = ({ imageSrc, imageAlt, style, aspectW, aspectH }) => {
     return (
         <div style={style}
-             className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+             className={`aspect-w-${aspectW} aspect-h-${aspectH} w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8`}>
             <img
                 src={imageSrc}
                 alt={imageAlt}
