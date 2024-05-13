@@ -1,6 +1,6 @@
 {
   "name": "vendere-storybook-test",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "dist/vendere-storybook-test.cjs.js",
   "module": "dist/vendere-storybook-test.es.js",
   "types": "dist/index.d.ts",

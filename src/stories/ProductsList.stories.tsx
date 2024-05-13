@@ -1,13 +1,14 @@
 // Import dependencies
 import React from "react";
 import { Story, Meta } from "@storybook/react/types-6-0";
+import ProductsList from "../components/ProductsList";
+import {ProductProps} from "../components/ProductCard";
 
 interface ProductsListProps {
-    products: Product[];
+    products: ProductProps[];
 }
 
 // Import the component
-import ProductsList, {Product} from "../components/ProductsList";
 
 // Export default meta data for the story
 export default {
@@ -17,7 +18,7 @@ export default {
 
 
 // Define the Template
-const Template: Story<{products: Product[]}> = (args: ProductsListProps) => <ProductsList {...args} />;
+const Template: Story<{products: ProductProps[]}> = (args: ProductsListProps) => <ProductsList {...args} />;
 
 // Define the Default view
 export const Default = Template.bind({});

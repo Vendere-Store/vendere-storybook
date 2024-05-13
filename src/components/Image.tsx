@@ -4,8 +4,8 @@ export interface ImageData {
     imageSrc: string;
     imageAlt: string;
     style?: React.CSSProperties;
-    aspectH: string
-    aspectW: string
+    aspectH?: string
+    aspectW?: string
 }
 
 export const Image: React.FC<ImageData> = ({ imageSrc, imageAlt, style, aspectW, aspectH }) => {
